@@ -1,0 +1,49 @@
+.food_type{
+    display: block;
+    padding: .2rem 0;
+}
+
+.price_type{
+    display: block;
+    padding: .2rem 0;
+}
+
+.filter-button{
+    float: right;
+    padding: .5rem;
+    background-color: #3fb1fe;
+    border-radius: 5px;
+    border: 1px solid grey;
+    font-weight: bolder;
+    color: whitesmoke;
+    cursor: pointer;
+}    
+
+.filter-button:hover{
+    background-color: rgb(4, 78, 188);
+}
+
+.page-nav{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.page-nav-number{
+    padding: .5rem;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.product-con::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.product-con {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
