@@ -1,0 +1,48 @@
+
+li{
+    cursor: pointer;
+    padding: 10px;
+    transition: all .1s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    position: relative;
+}
+
+li:hover{
+    background-color: rgb(60, 178, 97);
+    color: white;
+}
+
+.img{
+    transition: all .3s ease-in-out;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: black;
+}
+
+li:hover .img{
+    box-shadow: 0 0 6px 6px rgb(128, 128, 128, .5);
+    height: 60px;
+    width: 60px;
+}
+
+.name{
+    font-weight: bolder;
+}
+
+.massageCount{
+    padding: .3rem;
+    color: white;
+    background-color: red;
+    position: absolute;
+    display: flex;
+    height: 1.5rem;
+    width: 1.5rem;
+    align-items: center;
+    border-radius: 50%;
+    right: 0;
+    margin-right: .5rem;
+}

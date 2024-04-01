@@ -1,0 +1,113 @@
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+.graphic {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    align-items: center;
+}
+
+.background {
+    height: 500px;
+    width: 500px;
+    grid-area: 1/1;
+
+}
+
+.logImg {
+    height: 500px;
+    width: 500px;
+    grid-area: 1/1;
+    animation: img 3s infinite;
+}
+
+@keyframes img {
+    0% {
+        transform: translate(0px, -10px);
+    }
+
+    50% {
+        transform: translate(0px, 10px);
+    }
+
+    100% {
+        transform: translate(0px, -10px);
+    }
+
+}
+
+/* Styling for log details container */
+
+
+.logdiv {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to right, #ffffff, #65d3e9, #e391ff);
+}
+
+form {
+    padding: 0 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs {
+    text-align: center;
+    padding: 5px;
+}
+
+input {
+    margin-top: 1rem;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    padding: 3px;
+    outline: none;
+}
+
+.eyeSpan {
+    cursor: pointer;
+    margin-left: .5rem;
+}
+
+button {
+    background-color: #2d96fe;
+    padding: 3px 0;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    margin-top: 3rem;
+}
+
+.formSwitch{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: #002bff;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .graphic {
+        margin-left: 25%;
+    }
+
+    .logdiv {
+        background: linear-gradient(to bottom, #ffffff, #65d3e9, #e391ff);
+    }
+
+    .eye{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}

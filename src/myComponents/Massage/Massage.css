@@ -1,0 +1,23 @@
+.massage{
+    position: fixed;
+    z-index: 5;
+    float: right;
+    color: white;
+    margin-left: 5%;
+    transition: all .5s ease-in-out;
+
+}
+
+.animet{
+    height: 100%;
+    animation: name 3s infinite;
+}
+
+@keyframes name {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}

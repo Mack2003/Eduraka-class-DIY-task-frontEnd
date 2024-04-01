@@ -1,0 +1,57 @@
+nav{
+    padding: 4px;
+    height: 10vh;
+    background-color: #40ac8c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search{
+    width: max-content;
+    margin:2%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    background-color: white;
+    padding: 0 2%;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.search input{
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.userSetting{
+    max-width: 500px;
+    min-width: 200px;
+    margin: 1rem auto;
+    background-color: whitesmoke;
+    border-radius: 2rem;
+    overflow: hidden;
+    transform: translate(100vw, 0);
+    transition: all .5s ease-in-out;
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.303);
+}
+
+.settingContainer{
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+}
+
+.userSetting-img{
+    text-align: center;
+    margin: 1rem 0;
+    background-color: black;
+}
+
+@media screen and (max-width: 500px) {
+    nav{
+    height: 6vh;
+    }
+
+}

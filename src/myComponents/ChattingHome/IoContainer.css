@@ -1,0 +1,143 @@
+.body {
+    display: flex;
+    flex-direction: row;
+}
+
+.chat-details {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgb(53 246 155 / 50%), rgb(42 68 241 / 50%)), url('https://img.freepik.com/premium-vector/social-networks-dating-apps-vector-seamless-pattern_341076-469.jpg');
+    height: 90vh;
+    width: 70vw;
+    box-shadow: inset 0 0 5px 3px rgb(23, 23, 23, .5);
+    border-radius: 5px;
+}
+
+.masseges{
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    height: 75vh;
+    width: 70vw;
+}
+
+.textFild{
+    height: 10vh;
+    width: 100%;
+}
+
+.typing{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 1rem;
+    background-color: white;
+}
+
+.typing i{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #41b5fb;
+    border-radius: 50%;
+    color: white;
+}
+
+#massageArea{
+    margin: 0;
+    border: none;
+    outline: none;
+    resize: none;
+    width: 60vw;
+}
+
+
+#image {
+    display: grid;
+    place-items: center;
+    margin-top: 30%;
+    height: 40%;
+}
+
+.chat-list {
+    background: linear-gradient(rgb(53 246 155 ), rgb(42 68 241));
+    height: 90vh;
+    width: 30vw;
+    overflow-x: scroll;
+    overflow-x: hidden;
+}
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.current-chat-hadder{
+    height: 5vh;
+    background-color: #0f8563;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+    .chat-details {
+        width: 100vh;
+        z-index: 1;
+        position: fixed;
+    }
+
+    .chat-list {
+        width: 100vw;
+        height: 94vh;
+        z-index: 2;
+    }
+    .textFild{
+        width: 100vw;
+    }
+    
+    .masseges{
+        width: 100vw;
+    }
+
+    .current-chat-hadder{
+        width: 100vw;
+    }
+    
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+.imojiSectionList{
+    opacity: 0;
+    position: fixed;
+    padding: .5rem;
+    width: 200px;
+    height: 250px;
+    background-color: rgb(234, 234, 234);
+    border-radius: 1rem;
+    bottom: 6rem;
+    overflow-y: auto;
+    transform: translate(0, 100vh);
+    transition: all .3s ease-in-out;
+}
+
+.imojiSectionList-afterClick{
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.imojilist{
+    margin: 0;
+    padding: 0;
+}
+
+.imojilist li{
+    display: inline-block;
+}
